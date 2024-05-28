@@ -12,13 +12,13 @@ import java.util.ArrayList;
  */
 public class Persona {
     
-    public String uid, nombre, apellido, direccion, cedula, producto, Nom_img;
+    public String uid, nombre, apellido, cedula, direccion, producto, Nom_img;
     public ArrayList<Producto> productos;
 
     public Persona() {
     }
 
-    public Persona(String uid, String nombre, String apellido, String direccion, String cedula, String producto, String Nom_img) {
+    public Persona(String uid, String nombre, String apellido, String cedula, String direccion, String producto, String Nom_img) {
         this.uid = uid;
         this.nombre = nombre;
         this.apellido = apellido;

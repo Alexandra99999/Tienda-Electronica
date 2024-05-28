@@ -30,8 +30,8 @@ public class HelperRegistro implements IHelperRegistro{
         datos.put("uid", objper.getUid());
         datos.put("Nombre", objper.getNombre());
         datos.put("Apellido", objper.getApellido());
-        datos.put("Direccion", objper.getDireccion());
         datos.put("Cedula", objper.getCedula());
+        datos.put("Direccion", objper.getDireccion());
         datos.put("Productos", producto);
         datos.put("Nom_img", objper.getNom_img());
         long inicio = System.currentTimeMillis();
