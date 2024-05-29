@@ -170,7 +170,7 @@ public class RegistarBDLocal extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Registar Persona Local");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 10, -1, -1));
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 460, 360));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 450));
 
         jLabel10.setText("jLabel10");
         getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
@@ -199,7 +199,7 @@ public class RegistarBDLocal extends javax.swing.JFrame {
         res6 = Helpers.HelperValidacion.ValidarTodoLetra(uid);
         if (res == 0 && res1 == 0 && res2 == 0 && res3==0 && res4==0 && res5==0 && res6==0) {
         try{
-            per = new Persona(uid, nombre, apellido, cedula, direccion, producto, nombreimg);
+            per = new Persona(uid, nombre, apellido, direccion, cedula, producto, nombreimg);
             PersonaDAO dao= new PersonaDAO();
             dao.add(per);
             

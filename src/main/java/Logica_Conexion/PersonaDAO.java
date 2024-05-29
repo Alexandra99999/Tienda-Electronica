@@ -23,14 +23,14 @@ public class PersonaDAO implements DAOInterfacePersona {
     @Override
     public int add(Persona per) throws SQLException {
         String query
-                = "INSERT INTO persona(Uid,Nombre,Apellido,Cedula,Direccion,Producto,Nom_img)"
+                = "INSERT INTO persona(Uid,Nombre,Apellido,Direccion,Cedula,Producto,Nom_img)"
                 + "VALUES (?, ?, ?, ?, ?, ?, ?)";
         PreparedStatement ps = con.prepareStatement(query);
         ps.setString(1, per.getUid());
         ps.setString(2, per.getNombre());
         ps.setString(3, per.getApellido());
-        ps.setString(4, per.getDireccion());
-        ps.setString(5, per.getCedula());
+        ps.setString(4, per.getCedula());
+        ps.setString(5, per.getDireccion());
         ps.setString(6, per.getProducto());
         ps.setString(7, per.getNom_img());
 
